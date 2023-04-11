@@ -1,0 +1,163 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 320px;
+    max-width: 1920px;
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: DinCyBd, sans-serif;
+    color: #131313;
+    overflow-x: hidden;
+}
+
+.content {
+    padding-top: 6.2em;
+    font-size: 1.15vw;
+}
+
+.row {
+    display: flex;
+}
+
+.panel-left {
+    width: 30%;
+}
+
+h1 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+label {
+    margin-right: 0.1em;
+    line-height: 1;
+    display: inline-block;
+}
+
+.label-danger {
+    background-color: #e61e37;
+    color: #fff;
+    padding: 0.1em 0.4em;
+}
+
+h1 b {
+    text-transform: uppercase;
+}
+
+.parameters ul {
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.parameters strong {
+    text-transform: uppercase;
+    font-size: 1.05em;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.parameters p {
+    margin: -0.5em 0 0 0.6em;
+    font-size: 1.2em;
+}
+
+.panel-center {
+    width: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+}
+
+.pill-one {
+    margin-bottom: 0.4em;
+}
+
+.pill-one a {
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    display: block;
+}
+
+.pill-one a:hover {
+    opacity: .8;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.5);
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.5);
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+    max-height: 320px;
+}
+
+.hidden-lg {
+    display: none;
+}
+
+.details {
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.8em;
+    color: #e61e37;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.visible-lg {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        font-size: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .panel-left {
+        margin: auto;
+        width: auto;
+    }
+
+    .panel-left h1 {
+       font-size: 1.7em;
+    }
+
+    .visible-ms {
+        display: flex;
+    }
+
+    .hidden-ms {
+        display: none;
+    }
+
+    #details {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        column-gap: 65px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .panel-center {
+       justify-content: center; 
+       gap: 3em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .img-responsive {
+       height: auto;
+       max-height: 100%;
+    }
+}
